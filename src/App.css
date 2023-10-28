@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.posts_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+}
+
+.postWrapper {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border: 1px solid rgb(209, 202, 202);
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 2px 3px 4px rgb(192, 187, 187);
+  transition: 1s;
+}
+
+.postWrapper:hover {
+  transform: scale(110%);
+  transition: 1s;
+}
+
+.postWrapper h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.postWrapper p {
+  text-align: left;
+}
+
+.postWrapper span {
+  text-align: right;
+}
+
+button { 
+  padding: 8px 16px;
+  margin: 0px 6px 32px 6px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  background: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+button:hover { 
+  border: 1px solid rgb(90, 119, 194);
+  background: rgb(175, 188, 223);
+  transition: 1s;
+}
